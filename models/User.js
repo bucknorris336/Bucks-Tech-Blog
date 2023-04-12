@@ -25,23 +25,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    twitter: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    github: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    // define an email column
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
-      },
-    },
     // define a password column
     password: {
       type: DataTypes.STRING,
@@ -54,12 +37,12 @@ User.init(
   {
     hooks: {
       // set up beforeCreate lifecycle "hook" functionality
-      async beforeCreate(newUserData) {
+      beforeCreate: async (newUserData) => {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
       // set up beforeUpdate lifecycle "hook" functionality
-      async beforeUpdate(updatedUserData) {
+      beforeUpdate: async (updatedUserData) => {
         updatedUserData.password = await bcrypt.hash(
           updatedUserData.password,
           10
@@ -72,7 +55,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "user",
+    modelName: "User",
   }
 );
 
