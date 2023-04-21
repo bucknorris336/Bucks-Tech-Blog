@@ -5,7 +5,7 @@ const commentFormHandler = async function (event) {
   const body = document.querySelector('textarea[name="comment-body"]').value;
   // wrapped in one data set. All info will be availble to the server
   if (body) {
-    await fetch("/api/comment", {
+    await fetch("/api/comment/postId", {
       method: "POST",
       body: JSON.stringify({
         postId,
@@ -21,5 +21,5 @@ const commentFormHandler = async function (event) {
 };
 
 document
-  .querySelector("#new-comment-form")
+  .querySelector(".comment-form")
   .addEventListener("submit", commentFormHandler);

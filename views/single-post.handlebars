@@ -7,11 +7,11 @@
 
 <!-- displaying form and comments-->
 {{#if post.Comments}}
-<ul class="comment-list">
-  {{#each post.Comments}}
-    <li>{{this}}</li>
-  {{/each}}
-</ul>
+  <ul class="comment-list">
+    {{#each post.Comments}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
 {{/if}}
 <!-- only display if logged in -->
 {{#if loggedIn}}
