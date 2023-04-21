@@ -1,10 +1,6 @@
 # Bucks-Tech-Blog
 
-Check out a short video walkthrough
-📽️ [Click Here]
-
 ---
-
 ## Table of Contents
 
 - [Description](#Description)
@@ -13,7 +9,6 @@ Check out a short video walkthrough
 - [Contributing](#Contributing)
 
 ---
-
 ## Description
 
 ```
@@ -21,7 +16,6 @@ Check out a short video walkthrough
 ```
 
 ---
-
 ## Installation
 
 💾

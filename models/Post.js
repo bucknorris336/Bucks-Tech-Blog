@@ -18,4 +18,5 @@ Post.init(
   }
 );
 
+// exporting 
 module.exports = Post;

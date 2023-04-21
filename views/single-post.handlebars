@@ -1,9 +1,18 @@
 <!-- displaying articles -->
-{{post-info post}}
+{{post.title}}
+{{post.body}}
+{{format_date post.createdAt}}
 <br />
 <br />
 
 <!-- displaying form and comments-->
+{{#if post.Comments}}
+<ul class="comment-list">
+  {{#each post.Comments}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+{{/if}}
 <!-- only display if logged in -->
 {{#if loggedIn}}
   <form class="comment-form">
@@ -18,7 +27,7 @@
   </form>
 {{/if}}
 
-{{comments post.comments}}
+{{post.comments}}
 
 {{#if loggedIn}}
   <script src="/js/comment.js"></script>
