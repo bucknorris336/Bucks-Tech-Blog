@@ -1,4 +1,4 @@
-const postId = window.location.toString().split("/");
+const postId = window.location.toString().split("/")[4];
 console.log(postId);
 
 const commentFormHandler = async function (event) {
@@ -8,7 +8,7 @@ const commentFormHandler = async function (event) {
   const body = document.querySelector('textarea[name="comment-body"]').value;
   // wrapped in one data set. All info will be availble to the server
   if (body) {
-    await fetch("/api/comment/", {
+    await fetch(`/api/comment/${parseInt(postId)}`, {
       method: "POST",
       body: JSON.stringify({
         postId,

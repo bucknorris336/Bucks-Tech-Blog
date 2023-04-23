@@ -48,9 +48,13 @@ To run this project, you will need to add the following environment variables to
 
 `DB_PASSWORD =` 'your password here'
 
+`DB_HOST =` "127.0.0.1"
+
 ---
 
 ## Demo
+
+![tech-blog-photo](./assets/screencapture-localhost-3001-2023-04-21-20_26_06.png)
 
 ---
 
