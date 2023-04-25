@@ -37,11 +37,10 @@ router.get("/edit/:id", withAuth, async (req, res) => {
   try {
     // what should we pass here? we need to get some data passed via the request body
     const postData = await Post.findByPk(req.params.id);
-
     if (postData) {
       // serializing the data
       const post = postData.get({ plain: true });
-      console.log(postData);
+      console.log(post);
       // adding data to the edit-post from handlebars
       res.render("edit-post", {
         layout: "dashboard",

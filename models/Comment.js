@@ -7,9 +7,7 @@ Comment.init(
   {
     body: {
       type: DataTypes.STRING,
-      // primaryKey: true,
       allowNull: false,
-      // autoIncrement: true,
     },
     // user_id: {
     //   type: DataTypes.INTEGER,
@@ -25,13 +23,6 @@ Comment.init(
     //   references: {
     //     model: "post",
     //     key: "id",
-    //   },
-    // },
-    // comment_text: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    //   validate: {
-    //     len: [1],
     //   },
     // },
   },

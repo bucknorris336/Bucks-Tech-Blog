@@ -36,7 +36,7 @@ router.get("/post/:id", async (req, res) => {
     if (postData) {
       // serialize the data
       const post = postData.get({ plain: true });
-      console.log(post);
+      console.log(post.Comments[0].User);
       // which view should we render for a single-post?
       res.render("single-post", { post, loggedIn: req.session.loggedIn });
     } else {

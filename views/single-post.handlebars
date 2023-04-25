@@ -7,11 +7,12 @@
 
 <!-- displaying form and comments-->
 {{#if post.Comments}}
-  <ul class="comment-list">
+  <div class="comment-list">
     {{#each post.Comments}}
-      <li>{{this}}</li>
+      <p>{{this.body}}</p>
+      <p>{{format_date this.createdAt}} by {{this.User.username}}</p>
     {{/each}}
-  </ul>
+  </div>
 {{/if}}
 <!-- only display if logged in -->
 {{#if loggedIn}}
