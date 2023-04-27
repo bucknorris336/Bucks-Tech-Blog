@@ -10,15 +10,17 @@
 
 ---
 
-## Description
+### Description
 
-This tech blog allows new and returning users to view and create blog posts, interact with blog posts by commenting, and update or delete blog posts.
+This is a full stack application using the Model-View-Controller paradigm. The application uses a number of different technologies, including: Mysql, Express.js, mysql2 npm package, sequelize npm package, express-handlebars npm package, express-session npm package, connect-session-sequelize npm package, dotenv npm package, and bcrypt npm package.
 
 New users must first sign-up, and returning users can login.
+This tech blog allows new and returning users to view and create blog posts, interact with blog posts by commenting, and update or delete blog posts.
+
 
 ---
 
-## Installation
+### Installation
 
 💾
 
@@ -36,7 +38,7 @@ Requires:
 
 ---
 
-## Usage
+### Usage
 
 💻
 
@@ -52,15 +54,19 @@ To run this project, you will need to add the following environment variables to
 
 ---
 
-## Demo
+### Demo
 
 ![tech-blog-photo](./assets/screencapture-localhost-3001-2023-04-21-20_26_06.png)
 
 ---
 
-## Deployment
+### Deployment
 
-To see deployed site, click here: [Bucks tech blog](https://bucks-tech-blog.herokuapp.com/)
+Navigate to the deployed site, click: [Bucks tech blog](https://bucks-tech-blog.herokuapp.com/)
+
+* Click login to login or signup for an account
+* Click on posts to view or leave comments
+* Navigate to the dashboard page to view your posts or create new posts
 
 ---
 
