@@ -56,7 +56,7 @@ To run this project, you will need to add the following environment variables to
 
 ### Demo
 
-![tech-blog-photo](./assets/screencapture-localhost-3001-2023-04-21-20_26_06.png)
+![tech-blog](https://github.com/bucknorris336/Bucks-Tech-Blog/assets/62455130/5d23aaf8-58ae-4aaa-9c22-08fccb613131)
 
 ---
 
